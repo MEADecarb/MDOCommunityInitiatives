@@ -1,0 +1,13 @@
+theme: jekyll-theme-minimal
+title: Maryland Commission on LGBTQIA+ Affairs Resources Web Map
+description: The Maryland Commission on LGBTQIA+ Affairs is working to create a public resource directory of LGBTQIA+ affirming resources across the State.  
+# Plugins you want to use
+plugins:
+  - jekyll-remote-theme
+
+# Base URL configuration
+baseurl: "/MDOCommunityInitiatives" # the subpath of your site, e.g., "/schools"
+url: "https://meadecarb.github.io" # the base hostname & protocol for your site
+
+# Optional settings
+permalink: /:categories/:title/
