@@ -23,6 +23,7 @@ You can view the interactive map by visiting the [GitHub Pages site](https://MEA
 - `map.html`: The main interactive map that displays the community initiatives.
 - `index.md`: The landing page for the GitHub Pages site, which includes an overview and links to the map and additional resources.
 - `scripts/`: Any scripts used for data processing or map generation.
+- `data/`: Any data used for this map. 
 
 ## How to Contribute
 
