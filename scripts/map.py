@@ -90,9 +90,9 @@ for _, row in data.iterrows():
     
     popup_content += "</div>"
     
-    # Create a custom icon for the LGBTQIA flag
+    # Create a custom icon for the Intersex-inclusive Pride flag
     icon = folium.CustomIcon(
-        icon_image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gay_Pride_Flag.svg/2560px-Gay_Pride_Flag.svg.png",
+        icon_image="https://raw.githubusercontent.com/MEADecarb/MDOCommunityInitiatives/main/images/Intersex-inclusive_pride_flag.svg.png",
         icon_size=(30, 20)
     )
     
