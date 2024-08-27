@@ -2,6 +2,12 @@
 
 Welcome to the MDO Community Initiatives repository! This project is dedicated to mapping and showcasing various community initiatives across the Maryland region, focusing on sustainability, social equity, and resilience. The map provides a visual representation of the resources and services offered by different organizations, helping to connect communities and foster collaboration.
 
+## Project Updates
+[Open in Google Colab](https://colab.research.google.com/drive/1BW2hUfB-eX6JvqyJi-XXDRJCNPBlo2YH#scrollTo=POXmcoW5DdPS)
+``
+
+
+
 ## Project Overview
 
 The goal of this project is to create a comprehensive map that highlights the diverse initiatives available in the MDO region. This map can be used by community members, organizations, and policymakers to identify resources, build partnerships, and enhance the impact of local initiatives.
