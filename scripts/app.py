@@ -30,6 +30,14 @@ def update_github_file(file_path, commit_message):
     except Exception as e:
         st.error(f"An error occurred while updating the file on GitHub: {str(e)}")
 
+def show_map_preview(map_file):
+    try:
+        with open(map_file, 'r', encoding='utf-8') as file:
+            map_html = file.read()
+        st.components.v1.html(map_html, height=600)
+    except Exception as e:
+        st.error(f"An error occurred while loading the map preview: {str(e)}")
+
 st.title("Map Generator and GitHub Updater")
 
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
@@ -40,7 +48,9 @@ if uploaded_file is not None:
     st.success("File uploaded successfully!")
     
     run_map_generator()
-    update_github_file("map.html", "Update map.html via Streamlit app")
+    map_file = "map.html"
+    show_map_preview(map_file)
+    update_github_file(map_file, "Update map.html via Streamlit app")
     
     # Clean up temporary file
     os.remove("temp_upload.csv")
