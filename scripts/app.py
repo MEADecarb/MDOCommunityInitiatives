@@ -15,10 +15,14 @@ repo = g.get_repo(github_repo)
 
 def run_map_generator():
     try:
-        subprocess.run(["python", "map.py"], check=True)
+        result = subprocess.run(["python", "map.py"], check=True, capture_output=True, text=True)
         st.success("Map generated successfully!")
-    except subprocess.CalledProcessError:
+        st.text(result.stdout)  # Display the output of the map.py script
+        st.text(result.stderr)  # Display any error messages
+    except subprocess.CalledProcessError as e:
         st.error("Error occurred while generating the map.")
+        st.text(e.stdout)
+        st.text(e.stderr)
 
 def update_github_file(file_path, commit_message):
     try:
