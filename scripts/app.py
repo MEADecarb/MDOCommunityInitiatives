@@ -50,7 +50,12 @@ if uploaded_file is not None:
     with open("temp_upload.csv", "wb") as f:
         f.write(uploaded_file.getbuffer())
     st.success("File uploaded successfully!")
-    
+
+    # Debug: Show the content of the uploaded CSV file
+    uploaded_data = pd.read_csv("temp_upload.csv")
+    st.write("Uploaded CSV content:")
+    st.write(uploaded_data)
+
     run_map_generator()
     map_file = "map.html"
     show_map_preview(map_file)
