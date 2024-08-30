@@ -15,7 +15,8 @@ repo = g.get_repo(github_repo)
 
 def run_map_generator():
     try:
-        result = subprocess.run(["python", "map.py"], check=True, capture_output=True, text=True)
+        # Update the path to the correct location of map.py
+        result = subprocess.run(["python", "scripts/map.py"], check=True, capture_output=True, text=True)
         st.success("Map generated successfully!")
         st.text(result.stdout)  # Display the output of the map.py script
         st.text(result.stderr)  # Display any error messages
