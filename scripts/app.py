@@ -5,8 +5,8 @@ import os
 from github import Github
 
 # GitHub setup
-github_token = os.environ.get("GITHUB_TOKEN")
-github_repo = os.environ.get("GITHUB_REPO")
+github_token = os.environ.get('GITHUB_TOKEN')
+github_repo = os.environ.get("MEADecarb/MDOCommunityInitiatives")
 
 g = Github(github_token)
 repo = g.get_repo(github_repo)
