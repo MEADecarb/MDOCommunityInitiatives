@@ -4,6 +4,9 @@ import subprocess
 import os
 from github import Github
 
+# Access the GitHub token
+github_token = st.secrets["github"]["token"]
+
 # GitHub setup
 github_token = os.environ.get('GITHUB_TOKEN')
 github_repo = os.environ.get("MEADecarb/MDOCommunityInitiatives")
